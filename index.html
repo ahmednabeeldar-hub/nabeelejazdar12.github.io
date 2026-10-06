@@ -3,7 +3,6 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
 <title>Nabeel Ejaz Dar | Portfolio</title>
 
 <style>
@@ -12,13 +11,14 @@
 margin:0;
 padding:0;
 box-sizing:border-box;
-font-family:Segoe UI,sans-serif;
+font-family:'Segoe UI',sans-serif;
+scroll-behavior:smooth;
 }
 
 body{
-background:linear-gradient(135deg,#050816,#0f172a);
+background:linear-gradient(135deg,#020617,#0f172a);
 color:white;
-overflow-x:hidden;
+line-height:1.6;
 }
 
 header{
@@ -32,77 +32,104 @@ padding:20px;
 }
 
 .profile{
-width:220px;
-height:220px;
-border-radius:50%;
+width:120px;
+height:150px;
 object-fit:cover;
-border:6px solid cyan;
-box-shadow:0 0 40px cyan;
+border-radius:12px;
+border:3px solid cyan;
+box-shadow:0 0 20px cyan;
+margin-bottom:20px;
 }
 
 h1{
 font-size:55px;
-margin-top:20px;
+margin-bottom:10px;
 }
 
 .subtitle{
 font-size:22px;
 color:#94a3b8;
+max-width:900px;
 }
 
 section{
 max-width:1200px;
 margin:auto;
-padding:60px 20px;
+padding:50px 20px;
 }
 
 .card{
 background:rgba(255,255,255,0.05);
 backdrop-filter:blur(15px);
-padding:25px;
+padding:30px;
 border-radius:20px;
 margin-bottom:25px;
-box-shadow:0 0 25px rgba(0,255,255,.2);
+box-shadow:0 0 20px rgba(0,255,255,.15);
+transition:0.3s;
+}
+
+.card:hover{
+transform:translateY(-5px);
 }
 
 h2{
 color:cyan;
 margin-bottom:15px;
+font-size:30px;
+}
+
+ul{
+padding-left:20px;
 }
 
 .skills{
 display:grid;
-grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+grid-template-columns:repeat(auto-fit,minmax(180px,1fr));
 gap:15px;
+margin-top:15px;
 }
 
 .skill{
-padding:15px;
 background:#111827;
-border-radius:12px;
+padding:15px;
+border-radius:10px;
 text-align:center;
+font-weight:bold;
+transition:0.3s;
+}
+
+.skill:hover{
+transform:scale(1.05);
+background:#1e293b;
 }
 
 .gallery{
 display:grid;
-grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
 gap:20px;
 }
 
 .gallery img{
 width:100%;
-border-radius:15px;
-transition:.3s;
+border-radius:12px;
+box-shadow:0 0 15px rgba(255,255,255,.1);
+transition:0.3s;
 }
 
 .gallery img:hover{
-transform:scale(1.05);
+transform:scale(1.03);
+}
+
+.contact p{
+margin:10px 0;
 }
 
 footer{
-text-align:center;
-padding:40px;
 background:#020617;
+padding:30px;
+text-align:center;
+margin-top:40px;
+color:#94a3b8;
 }
 
 </style>
@@ -112,13 +139,13 @@ background:#020617;
 
 <header>
 
-<img src="nabeel.jpg" class="profile">
+<img src="nabeel.jpg" alt="Nabeel Ejaz Dar" class="profile">
 
 <h1>Nabeel Ejaz Dar</h1>
 
 <p class="subtitle">
-Computer Science Student | Python Developer |
-C++ Programmer | AI Enthusiast | Future Software Engineer
+Computer Science Student | Python Developer | C++ Programmer |
+AI Enthusiast | Web Developer | Future Software Engineer
 </p>
 
 </header>
@@ -129,22 +156,21 @@ C++ Programmer | AI Enthusiast | Future Software Engineer
 <h2>About Me</h2>
 
 <p>
-I am Nabeel Ejaz Dar from Muzaffarabad, AJK.
-I am a Computer Science student with a strong interest
-in Artificial Intelligence, Software Development,
-Python Programming, C++, Web Development,
-Cyber Security and emerging technologies.
+I am Nabeel Ejaz Dar, a Computer Science student passionate about
+Artificial Intelligence, Software Development, Python Programming,
+C++, Web Technologies, and Cyber Security. I enjoy learning new
+technologies and building projects that solve real-world problems.
 </p>
+
 </div>
 
 <div class="card">
 <h2>Education</h2>
 
 <ul>
-<li>BS Artificial Intelligence</li>
-<li>University of Azad Jammu & Kashmir (UAJK)</li>
-<li>Intermediate (FSc ICS)</li>
-<li>Matriculation (Science)</li>
+<li><strong> Doing BS Computer Science</strong> — University of Azad Jammu & Kashmir (UAJK)</li>
+<li><strong>Intermediate (FSc)</strong> — Computer Science Group</li>
+<li><strong>Matriculation</strong> — Science Group</li>
 </ul>
 
 </div>
@@ -157,14 +183,16 @@ Cyber Security and emerging technologies.
 
 <div class="skill">Python</div>
 <div class="skill">C++</div>
-<div class="skill">HTML</div>
-<div class="skill">CSS</div>
+<div class="skill">HTML5</div>
+<div class="skill">CSS3</div>
 <div class="skill">JavaScript</div>
 <div class="skill">Git & GitHub</div>
-<div class="skill">AI & Machine Learning</div>
-<div class="skill">Problem Solving</div>
+<div class="skill">Artificial Intelligence</div>
+<div class="skill">Machine Learning</div>
 <div class="skill">Prompt Engineering</div>
 <div class="skill">Database Fundamentals</div>
+<div class="skill">Problem Solving</div>
+<div class="skill">Software Development</div>
 
 </div>
 
@@ -175,27 +203,27 @@ Cyber Security and emerging technologies.
 <h2>Projects</h2>
 
 <ul>
-<li>PlantLens AI Plant Identification System</li>
+<li>PlantLens – AI Plant Identification System</li>
 <li>Personal Portfolio Website</li>
-<li>Python Games</li>
+<li>Python Programming Projects</li>
 <li>C++ Desktop Applications</li>
-<li>AI Learning Projects</li>
+<li>AI Learning and Research Projects</li>
 </ul>
 
 </div>
 
 <div class="card">
 
-<h2>Achievements & Certificates</h2>
+<h2>Certificates & Achievements</h2>
 
-<div class="desktop">
+<div class="gallery">
 
-<img src="ailearnerclub.jpg">
-<img src="uajk.jpg">
-<img src="ISPR.jpg">
-<img src="Certificate.jpg">
-<img src="10th.jpg">
-<img src="12th.jpg">
+<img src="ailearnerclub.jpg" alt="Python Certificate">
+<img src="uajk.jpg" alt="UAJK AIS Certificate">
+<img src="ISPR.jpg" alt="ISPR Certificate">
+<img src="Certificate.jpg" alt="Quiz Certificate">
+<img src="10th.jpg" alt="SSC Certificate">
+<img src="12th.jpg" alt="HSSC Result">
 
 </div>
 
@@ -203,25 +231,29 @@ Cyber Security and emerging technologies.
 
 <div class="card">
 
-<h2>Career Goals</h2>
+<h2>Career Objective</h2>
 
 <p>
-To become a professional Software Engineer and AI Developer,
-build intelligent applications, contribute to innovative
-technology projects, and create solutions that benefit society.
+My goal is to become a professional Software Engineer and AI Developer,
+create innovative technology solutions, contribute to impactful projects,
+and continue learning advanced technologies throughout my career.
 </p>
 
 </div>
 
-<div class="card">
+<div class="card contact">
 
-<h2>Contact</h2>
+<h2>Contact Information</h2>
 
-<p>Email: nabeeldar490@gmail.com</p>
+<p><strong>Name:</strong> Nabeel Ejaz Dar</p>
 
-<p>Location: Muzaffarabad, Azad Kashmir, Pakistan</p>
+<p><strong>Location:</strong> Muzaffarabad, Azad Kashmir, Pakistan</p>
 
-<p>GitHub: ahmednabeeldargithub.com/yourusername</p>
+<p><strong>University:</strong> University of Azad Jammu & Kashmir (UAJK)</p>
+
+<p><strong>GitHub:</strong> Add your GitHub profile link here</p>
+
+<p><strong>Email:</strong> Add your email address here</p>
 
 </div>
 
@@ -229,7 +261,7 @@ technology projects, and create solutions that benefit society.
 
 <footer>
 
-© 2026 Nabeel Ejaz Dar
+© 2026 Nabeel Ejaz Dar | Portfolio Website
 
 </footer>
 
